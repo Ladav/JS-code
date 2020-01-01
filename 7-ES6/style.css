@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 60px 0 60px 20px;
+}
+
+.green,
+.red,
+.blue {
+    width: 40%;
+    padding: 30px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 120%;
+}
+
+.green { background-color: green; }
+.blue { background-color: dodgerblue; }
+.red { background-color: red; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
