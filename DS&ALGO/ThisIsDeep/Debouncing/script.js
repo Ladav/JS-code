@@ -22,15 +22,15 @@ const getSearch = () => {   // function will be called
 };
 
 // debounce
-const debounce = (fn, d) => {
+const debounce = (fn, time) => {
     let timer;
     return function() {
         const context = this;
         const args = arguments;
         clearTimeout(timer);
         timer = setTimeout(() => {
-            fn.apply(context, args);
-        }, d);
+            fn.apply(context,args);
+        }, time);
     };
 };
 
