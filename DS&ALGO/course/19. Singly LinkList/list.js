@@ -77,20 +77,96 @@ class SinglyLL {
         this.length++;
         return this;
     }
+
+    get(index) {
+        if(index < 0 || index >= this.length) {
+            return null;
+        }
+
+        let curNode = this.head;
+        let counter = 0;
+
+        while(counter < index) {
+            curNode = curNode.next;
+            counter++;
+        }
+
+        return curNode;
+    }
+
+    set(index, val) {
+        const node = this.get(index);
+        if(node) {
+            node.val = val;
+            return true;
+        }
+
+        return false;
+    }
+
+    insert(index, val) {
+        if(index < 0 || index > this.length) return false; 
+        // when inserting at index 0
+        if(index === 0) return !!this.unShift(val);
+        // when inserting at the end of the list
+        if(index === this.length) return !!this.push(val);
+        // when inserting somewhere between the list
+        const newNode = new Node(val);
+        const prevNode = this.get(index - 1);
+        newNode.next = prevNode.next;
+        prevNode.next = newNode;
+        this.length++;
+
+        return true;
+    }
+
+    remove(index) {
+        if(index < 0 || index > this.length - 1) return undefined; 
+        // when removing from index 0
+        if(index === 0) return this.shift(); 
+        // when removing at the end of the list
+        if(index === this.length - 1) return this.pop(); 
+        // when removing from between
+        const prevNode = this.get(index - 1);
+        const removedNode = prevNode.next;
+        prevNode.next = removedNode.next;
+        this.length--;
+        
+        return removedNode;
+    }
+
+    reverse() {
+        let curNode = this.head;
+        this.head = this.tail; 
+        this.tail = curNode;
+        
+        let nextNode, prevNode = null;
+
+        while(curNode) {
+            nextNode = curNode.next;
+            curNode.next = prevNode;
+            prevNode = curNode;
+            curNode = nextNode;
+        }
+
+        return this;
+    }
 }
 
-let sll = new SinglyLL();
-sll.push("hi");
-sll.push('there');
-sll.push('how');
-sll.push('are');
-sll.push('you');
+let SLL = new SinglyLL();
+SLL.push("hi");
+SLL.push('there');
+SLL.push('how');
+SLL.push('are');
+SLL.push('you');
 
-// sll.pop();
+// SLL.pop();
 
-console.log(sll);
+console.log(SLL);
+console.log(SLL.reverse())
+console.log(SLL);
 
-// sll.traverse();
+// SLL.traverse();
 
 // const n1 = new Node("hi");
 // n1.next = new Node('there');
