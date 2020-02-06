@@ -6,7 +6,7 @@ const freqCounter = (arr1, arr2) => {
         obj1[val] = (obj1[val] || 0) + 1;
     }
     for(let val of arr2) {
-        obj2[val] = (obj2[val] || 0) + 1;
+        obj2[val] = (obj2[val] || 0) + 1; 
     }
 
     for(let key in obj1) {
