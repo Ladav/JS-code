@@ -6,6 +6,7 @@ function viralAdvertising(n) {
         likes = likes + Math.floor(shared / 2);
         shared = Math.floor(shared / 2) * 3; 
     }
+    
     return likes;
 };
 
