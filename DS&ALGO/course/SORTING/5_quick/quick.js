@@ -38,5 +38,5 @@ const quickSort = (arr,start = 0, end = arr.length - 1) => {
     return arr;
 }
 
-let arr = [3,2,1,4,345,345,45,3454];
+let arr = [3,2,1,4,345,345,45,3454 ];
 console.log(quickSort(arr));
