@@ -1,3 +1,5 @@
+// NOTE- not in working condition
+
 /** QuickSort -> [3,2,1,4]
  *          [3,2,1,4,5]
  *              3
