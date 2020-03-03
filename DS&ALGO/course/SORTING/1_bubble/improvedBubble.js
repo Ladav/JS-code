@@ -6,12 +6,13 @@
  * in the last iteration).
 */
 
+
 const bubble = (arr) => {
     const len = arr.length;
     let noswap;
     for(let i = 0; i < len - 1; i++) {
         noswap = true;
-        for(let j = 0; j < len - i; j++) {
+        for(let j = 0; j < len - (1+i); j++) {
             if(arr[j] > arr[j+1]){
                 [arr[j], arr[j+1]] = [arr[j+1], arr[j]];
                 noswap = false;
@@ -22,4 +23,4 @@ const bubble = (arr) => {
     return arr;
 }
 
-console.log(bubble([4,3,3,5,32,6,2,2,2,2,2,3443,6,43434,5,4]))
+console.log(bubble([4,3,3,5,32,6,2,2,2,2,2,3443,6,43434,5,4]));
