@@ -1,4 +1,3 @@
-let x = 0;
 const bubble = (arr) => {
     const len = arr.length;
     for(let i = 0; i < len - 1; i++) {
@@ -6,7 +5,6 @@ const bubble = (arr) => {
             if(arr[j] > arr[j+1]){
                 [arr[j], arr[j+1]] = [arr[j+1], arr[j]];
             }
-            console.log(++x);
         }
     }
     return arr;
