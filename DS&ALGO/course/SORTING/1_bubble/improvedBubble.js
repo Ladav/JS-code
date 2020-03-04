@@ -5,8 +5,6 @@
  * then we stop the sorting process as the array is already fully sort (as no swap were made
  * in the last iteration).
 */
-
-
 const bubble = (arr) => {
     const len = arr.length;
     let noswap;
