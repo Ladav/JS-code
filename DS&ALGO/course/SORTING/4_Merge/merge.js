@@ -56,6 +56,6 @@ const merge = (arr1, arr2) => {
         j++;
     }
     return newArr;
-}
+};
 
 console.log(mergeSort([3, 7, 35, 53, 2, 3, 12, 3, 24324, 32, 4, 32]));
