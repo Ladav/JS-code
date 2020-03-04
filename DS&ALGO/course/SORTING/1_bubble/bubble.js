@@ -10,4 +10,4 @@ const bubble = (arr) => {
     return arr;
 }
 
-console.log(bubble([4,3,343,23,34]))
+console.log(bubble([4,3,343,23,34]));
