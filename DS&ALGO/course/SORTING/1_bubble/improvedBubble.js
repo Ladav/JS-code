@@ -19,6 +19,6 @@ const bubble = (arr) => {
         if(noswap) break;
     }
     return arr;
-}
+};
 
 console.log(bubble([4,3,3,5,32,6,2,2,2,2,2,3443,6,43434,5,4]));
