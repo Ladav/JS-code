@@ -1,5 +1,5 @@
-/** Divide Array into two parts util only one element left in the array recursively
- *  then two the two divide arrays from bottom toward's top.
+/** Divide Array into two parts util only one element left in the array (recursively)
+ *  then merge the two divide arrays from bottom toward's top.
  * 
  *              [3,2,1]-> len=3, mid=1, left=[3], right=[2,1]
  *                      /                            \
@@ -7,7 +7,7 @@
  *                                          /               \
  *                                 [2] return [2]           [1] returns [1]
  * 
- *  merging of the above example will be like->
+ *  merging of the above, example will be like->
  *  [3,2,1]-> divide into [3],[2,1]
  * now [3] is sorted and can be merged with other part ex-[2,1]
  * before ""merge(left, right);"" 

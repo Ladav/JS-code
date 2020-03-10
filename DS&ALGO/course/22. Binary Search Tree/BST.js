@@ -22,7 +22,7 @@ class BST {
 
         let curNode = this.root;
         while (true) {
-            if(newNode.val === curNode.val) return undefined; // node with same value exists already
+            if (newNode.val === curNode.val) return undefined; // node with same value exists already
             if (curNode.val > newNode.val) {
                 if(curNode.left === null) {
                     curNode.left = newNode;

@@ -1,5 +1,5 @@
 /**[5,_2,1,4,3](assuming 5 is sorted so start from second element ex-2) check where 2
- * fit's in the sorted part (which is consist of 5 only right now.)
+ * fit's in the sorted part (right now which is consist of 5 only.)
  * now check where to place 2 -> 5>2 yes so place 2 before 5.
  * [2,5,_1,4,3] ([2,5] are sorted, now sort the next item eg 1)
  * first we compare 5>1 yes then 2>1 yes then move 1 at first position

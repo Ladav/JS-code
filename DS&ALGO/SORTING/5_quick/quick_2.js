@@ -1,7 +1,7 @@
 /**
- * QuickSort use the divide an conquer approach to sort the array same as mergesort but it do not 
- * create new smaller array to sort them but instead pass a reference of the original array of
- * it utility fx's. It maintain pointer's(low(start),high(end)) to a part of a array, which is
+ * QuickSort use the divide and conquer approach to sort the array same as mergesort but it do not 
+ * create new smaller array to sort them but instead pass a reference of the original array to
+ * it's utility fx. It maintain pointer's(low(start),high(end)) to a part of a array, which is
  * assumed to be divided from the array, so that they can be sorted.
  * 
  * partition fx->
@@ -9,7 +9,7 @@
  * but it is not the best approach and this algo can be optimized by choosing the pivot carefully
  * check quick_optimized.
  * In partition we get the array and low(starting pointer) and high(pointer to the last element in
- * the current(may be assumed or divided array)) and return the index of pivot (where it is placed
+ * the current(the assumed or divided array)) and return the index of pivot (where it is placed
  * now in the array "pivot is sorted now")
  * Inside the patition algo we have implemented two loops-
  * first->
@@ -27,7 +27,7 @@
  * here we are starting from the end of the array towards beginning, now we are looking for an
  * element smaller than the pivot, if we get one we swap it with the j'th element.
  * 
- * and in the end we swap the pivot element with j'th element as it is correct position for the
+ * and in the end we swap the pivot element with j'th element as it is the correct position for the
  * pivot after we get out of the parent while loop.
  * 
  * quickSort->

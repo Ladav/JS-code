@@ -11,7 +11,7 @@ const digitCount = (num) => {
 
 // console.log(digitCount(33452));
 
-const mostDigits = (arr = [1,22,333]) => {
+const mostDigits = (arr) => {
     let maxDigit = 0;
     arr.forEach(el => {
         let digits = digitCount(el);
