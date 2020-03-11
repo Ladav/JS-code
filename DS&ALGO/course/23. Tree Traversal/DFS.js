@@ -98,7 +98,7 @@ class BST {
         return visited;
     };
 
-    DFS_preOrder() {
+    DFS_preOrder() {        // recursion based approach
         const visited = [];
         const curNode = this.root;
 
@@ -111,7 +111,7 @@ class BST {
         return visited;
     };
 
-    DFS_postOrder() {
+    DFS_postOrder() {       // recursion based approach
         const visited = [];
         const curNode = this.root;
 
@@ -154,7 +154,7 @@ class BST {
         };
         return visited;
     };
-    DFS_inOrder() {
+    DFS_inOrder() {     // recursion based approach
         const visited = [];
         const curNode = this.root;
 
@@ -167,8 +167,7 @@ class BST {
 
         return visited;
     };
-
-    DFS_inOrder_2() {
+    DFS_inOrder_2() {   // stack based approach
         const stack = [];
         const visited = [];
         let curNode = this.root;
