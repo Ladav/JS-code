@@ -1,0 +1,160 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20200311.233930.15440.0.001.json",
+    "dumpEventTime": "2020-03-11T23:39:30Z",
+    "dumpEventTimeStamp": "1583950170098",
+    "processId": 15440,
+    "cwd": "C:\\Users\\La\\Desktop\\js\\DS&ALGO\\course\\23. Tree Traversal",
+    "commandLine": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "DFS.js"
+    ],
+    "nodejsVersion": "v13.7.0",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "13.7.0",
+      "v8": "7.9.317.25-node.28",
+      "uv": "1.34.1",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "79",
+      "nghttp2": "1.40.0",
+      "napi": "5",
+      "llhttp": "2.0.1",
+      "openssl": "1.1.1d",
+      "cldr": "36.0",
+      "icu": "65.1",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v13.7.0/node-v13.7.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v13.7.0/node-v13.7.0.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v13.7.0/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "10.0.18362",
+    "osVersion": "Windows 10 Pro",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz",
+        "speed": 2208,
+        "user": 3000875,
+        "nice": 0,
+        "sys": 4476656,
+        "idle": 56229578,
+        "irq": 1855453
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz",
+        "speed": 2208,
+        "user": 1825781,
+        "nice": 0,
+        "sys": 1790000,
+        "idle": 60091093,
+        "irq": 409156
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz",
+        "speed": 2208,
+        "user": 5890453,
+        "nice": 0,
+        "sys": 3659171,
+        "idle": 54157234,
+        "irq": 113406
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz",
+        "speed": 2208,
+        "user": 2648203,
+        "nice": 0,
+        "sys": 1298562,
+        "idle": 59760109,
+        "irq": 35656
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz",
+        "speed": 2208,
+        "user": 4458875,
+        "nice": 0,
+        "sys": 3425531,
+        "idle": 55822468,
+        "irq": 98890
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz",
+        "speed": 2208,
+        "user": 2060437,
+        "nice": 0,
+        "sys": 906968,
+        "idle": 60739468,
+        "irq": 36156
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz",
+        "speed": 2208,
+        "user": 3653703,
+        "nice": 0,
+        "sys": 1883734,
+        "idle": 58169437,
+        "irq": 64593
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz",
+        "speed": 2208,
+        "user": 2488546,
+        "nice": 0,
+        "sys": 1600625,
+        "idle": 59617703,
+        "irq": 48578
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz",
+        "speed": 2208,
+        "user": 3602875,
+        "nice": 0,
+        "sys": 1767984,
+        "idle": 58336000,
+        "irq": 69062
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz",
+        "speed": 2208,
+        "user": 1804828,
+        "nice": 0,
+        "sys": 1682953,
+        "idle": 60219078,
+        "irq": 36171
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz",
+        "speed": 2208,
+        "user": 3112359,
+        "nice": 0,
+        "sys": 3776781,
+        "idle": 56817718,
+        "irq": 133906
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz",
+        "speed": 2208,
+        "user": 1976406,
+        "nice": 0,
+        "sys": 1033703,
+        "idle": 60696750,
+        "irq": 32859
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "VirtualBox Host-Only Network",
+     

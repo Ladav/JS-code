@@ -135,25 +135,27 @@ class BST {
 
         while(stack.length > 0 || curNode) {
             // console.log(stack.length)
-            if(curNode) {
+            if(curNode !== null) {
+                stack.push(curNode);
+                curNode = curNode.left;
+            }
+            else {
+                let temp = stack[stack.length - 1].right;
+                if(temp === null) {
+                    temp = stack[stack.length - 1];
+                    visited.push(temp.val);
+                    stack.pop(); // removing visited node
 
+                    while(stack.length > 0 && temp === stack[stack.length - 1].right) {
+                        temp = stack.pop();
+                        visited.push(temp.val);
+                    } 
+                }
+                else {
+                    curNode = temp;
+                } 
             }
-            eles {
-
-            }
-            curNode = stack[stack.length-1];
-            console.log()
-            if(curNode.left) {
-                stack.push(curNode.left);
-                continue;
-            }
-            if(curNode.right){
-                stack.push(curNode.right);
-                continue;
-            }
-            visited.push(curNode.val);
-            stack.pop(); // removing visited node
-            console.log(stack)
+            console.log(stack);
         };
 
         return visited;
@@ -173,5 +175,5 @@ console.log(binaryTree.DFS_postOrder_2());
  *            6    15
  *          /  \     \
  *         3   8      20
- * 
+ *  
  */
