@@ -1,8 +1,8 @@
-A system that can run multiple concurrent jobs on a single CPU have a process of choosing which task hast to run when, and how to break them up, called “scheduling”. The Round-Robin policy for scheduling runs each job for a fixed amount of time before switching to the next job. The waiting time fora job is the total time that it spends waiting to be run. Each job arrives at particular time for scheduling and certain time to run, when a new job arrives, It is scheduled after existing jobs already waiting for CPU time.Given list of job submission, calculate the average waiting time for all jobs using Round-Robin policy.
-The input to the function waitingTime Robin consist of two integer arrays containing job arrival and run times, an integer n representing number of jobs and am integer q  representing the fixed amount of time used by Round-Robin policy. The list of job arrival time and run time sorted in ascending order by arrival time. For jobs arriving at same time, process them in the order they are found in the arrival array. You can assume that jobs arrive in such a way that CPU is never idle.
-The function should return floating point value for the average waiting time which is calculated using round robin policy.
-Assume 0<=jobs arrival time < 100 and 0<job run time <100.
-Solution:
+// A system that can run multiple concurrent jobs on a single CPU have a process of choosing which task hast to run when, and how to break them up, called “scheduling”. The Round-Robin policy for scheduling runs each job for a fixed amount of time before switching to the next job. The waiting time fora job is the total time that it spends waiting to be run. Each job arrives at particular time for scheduling and certain time to run, when a new job arrives, It is scheduled after existing jobs already waiting for CPU time.Given list of job submission, calculate the average waiting time for all jobs using Round-Robin policy.
+// The input to the function waitingTime Robin consist of two integer arrays containing job arrival and run times, an integer n representing number of jobs and am integer q  representing the fixed amount of time used by Round-Robin policy. The list of job arrival time and run time sorted in ascending order by arrival time. For jobs arriving at same time, process them in the order they are found in the arrival array. You can assume that jobs arrive in such a way that CPU is never idle.
+// The function should return floating point value for the average waiting time which is calculated using round robin policy.
+// Assume 0<=jobs arrival time < 100 and 0<job run time <100.
+// Solution:
 #include<iostream> 
 using namespace std; 
 void findWaitingTime(int processes[], int n, int bt[], int wt[], int quantum) 
