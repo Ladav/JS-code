@@ -11,13 +11,13 @@
  * iteration 1-queue[10(root)] , visited[]
  * pop first element of queue and put it into visited and check it has children, if it do have
  * put them into queue(pending)
- * iteration 2-
+ * iteration 1-
  * step 1->remove from queue and put it into visited->queue[] , visited[10]
  * step 2->if there is a left child->queue[8] , visited[10]
  * step 3->if there is a right child->queue[8,15] , visited[10]
+ * iteration 2-
+ * after iteration 2 we will have- queue[15,2,9] , visited[10,8]
  * iteration 3-
- * after iteration 3 we will have- queue[15,2,9] , visited[10,8]
- * iteration 4-
  * after iteration 3 we will have- queue[2,9,20] , visited[10,8,15]
  * and so on util the queue get's empty
  */

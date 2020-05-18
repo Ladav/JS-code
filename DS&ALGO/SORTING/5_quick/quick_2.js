@@ -37,9 +37,9 @@
  */
 const quickSort = (arr, low = 0, high = arr.length-1) => {
     if(low < high) {
-        const j =partition(arr, low, high);
-        quickSort(arr, low, j-1);
-        quickSort(arr, j+1, high);
+        const pivotPosition = partition(arr, low, high);
+        quickSort(arr, low, pivotPosition-1);
+        quickSort(arr, pivotPosition+1, high);
     }
 
     return arr;

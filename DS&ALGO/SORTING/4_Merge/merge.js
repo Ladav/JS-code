@@ -1,5 +1,5 @@
 /** Divide Array into two parts util only one element left in the array (recursively)
- *  then merge the two divide arrays from bottom toward's top.
+ *  then merge the two divided arrays from bottom toward's top.
  * 
  *              [3,2,1]-> len=3, mid=1, left=[3], right=[2,1]
  *                      /                            \
